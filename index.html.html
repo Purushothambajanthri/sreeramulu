@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Cuts | Premium Barber Shop</title>
+    <link rel="stylesheet" href="c.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">✂️</span>
+                <div class="logo-text">
+                    <h1>SREERAMULU STYLES</h1>
+                    <span>KPD BARBER SHOP</span>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#barbers">Our Barbers</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#book" class="btn-primary">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container">
+            <h2>Master Your Style</h2>
+            <p><b>KPD</b> grooming services for the modern gentleman</p>
+            <a href="#book" class="btn-primary">Book Your Appointment</a>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-price="35">
+                    <div class="service-icon">✂️</div>
+                    <h3>Hair Cut</h3>
+                    <p>Precision haircut with styling</p>
+                    <span class="price">Rs80</span>
+                    <a href="#book" class="btn-secondary">Book Now</a>
+                </div>
+                <div class="service-card" data-price="25">
+                    <div class="service-icon">🪒</div>
+                    <h3>Beard Trim/shave</h3>
+                    <p>Professional beard grooming</p>
+                    <span class="price">Rs30</span>
+                    <a href="#book" class="btn-secondary">Book Now</a>
+                </div>
+                <div class="service-card" data-price="55">
+                    <div class="service-icon">👑</div>
+                    <h3>haircut, bread shave/trim , hair color</h3>
+                    <p>Haircut, beard, and hot towel</p>
+                    <span class="price">Rs120</span>
+                    <a href="#book" class="btn-secondary">Book Now</a>
+                </div>
+                 <div class="service-card" data-price="55">
+                    <div class="service-icon">👑</div>
+                    <h3> Royal Face-wash</h3>
+                    <p>Haircut, beard, and hot towel</p>
+                    <span class="price">Rs200</span>
+                    <a href="#book" class="btn-secondary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="barbers" class="barbers">
+        <div class="container">
+            <h2>Expert Barbers</h2>
+            <div class="barbers-grid">
+                <div class="barber-card">
+                    <img src="IMG-20231218-WA0000.jpg" alt="Barber">
+                    <h3>BAJANTHRI SREERAMULU</h3>
+                    <p>Master Barber</p>
+                </div>
+                <div class="barber-card">
+                    <img src="IMG_20220112_203001.jpg" alt="Barber">
+                    <h3>BAJANTHRI PURUSHOTHAM</h3>
+                    <p>Style Specialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Work</h2>
+            <div class="gallery-grid">
+                <img src="https://images.pexels.com/photos/2076930/pexels-photo-2076930.jpeg" alt="Haircut">
+                <img src="https://images.pexels.com/photos/1319461/pexels-photo-1319461.jpeg" alt="Haircut">
+                <img src="https://images.pexels.com/photos/1570807/pexels-photo-1570807.jpeg" alt="Haircut">
+            </div>
+        </div>
+    </section>
+
+    <section id="book" class="booking">
+        <div class="container">
+            <h2>Book Appointment</h2>
+            <form id="booking-form" class="booking-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                 <div class="form-group">
+                    <label for="email">Phone.No</label>
+                    <input type="number" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Services</label>
+                    <select id="service" required>
+                        <option value="">Select a service</option>
+                        <option value="classic">Hair cut -->Rs.50</option>
+                        <option value="beard">Bread-->Rs.30</option>
+                        <option value="royal">Hair,bread,color-->Rs.120</option>
+                        <option value="royal">Face wash-->Rs.200</option>
+                        <option value="royal">Oil massage-->Rs.100</option>
+                        <option value="royal">only color-->Rs.70</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" required>
+                </div>
+                <button type="submit" class="btn-primary">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div>
+                    <h3>Location</h3>
+                    <p>3-21s,main road near Elementry school</p>
+                    <p>Kristipadu,peddavadaguru-mandal,anantapur dist,AP,India</p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 6am - 9pm</p>
+                    <p>Sat: 9am - 8pm</p>
+                    <p>Sun: 9am - 8pm</p>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p>Phone: 9573761730</p>
+                    <p>Email: Sreeeamulu315@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">✂️</span>
+                <div class="logo-text">
+                    <h1>SREERAMULU styles</Style></h1>
+                    <span>KPD BARBER SHOP</span>
+                </div>
+            </div>
+            <p>&copy; 2025 purushotham. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="j.js"></script>
+</body>
+</html>
